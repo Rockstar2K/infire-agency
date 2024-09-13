@@ -20,6 +20,7 @@ body{
 
 h1, h2, h3, h4, h5, h6{
     font-family: Unbounded, sans-serif;
+    color: whitesmoke !important; /* bootstrap está cambiando los colores*/
 }
 
 h2{
@@ -28,6 +29,8 @@ h2{
 
 p, button{
     font-family: Helvetica, sans-serif;
+    color: whitesmoke;
+
 }
 
 /* NAVBAR */
@@ -91,7 +94,6 @@ nav div ul li:hover {
 #logo:hover {
     transform: scale(1.1);
 }
-
 
 
 /* HERO */
@@ -163,6 +165,7 @@ footer p{
     display: flex;
     flex-direction: column;
     gap: 6rem;
+    background-color: black;
 }
 
 .solutions-container-title{
@@ -187,6 +190,7 @@ footer p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0.5rem;
 }
 
 .solution-container-right{
