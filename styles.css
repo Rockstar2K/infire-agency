@@ -194,7 +194,8 @@ footer p{
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-}
+    text-align: center
+;}
 
 .solution-container-right{
     flex-basis: 100%; 
@@ -255,7 +256,8 @@ footer p{
         flex-basis: 50%;
         max-width: 50%;
 
-        align-items: left !important;
+        align-items: start;
+        text-align: left;
 
       
     }
