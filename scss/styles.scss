@@ -1,7 +1,11 @@
 @use 'footer';
 @use 'faq';
 @use 'variables';
+@use './hero';
 @use './home/solutions';
+@use './home/grid';
+
+
 
 html,
 body,
