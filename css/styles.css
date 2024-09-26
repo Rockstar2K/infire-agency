@@ -75,6 +75,38 @@ footer .footer-bottom p {
   color: rgb(156, 156, 156);
 }
 
+.faq-container {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+}
+.faq-container .faq-container_right {
+  flex: 1;
+  padding-right: 2rem;
+}
+.faq-container .faq-container_left {
+  flex: 1;
+  padding-left: 2rem;
+}
+.faq-container .faq-container_left .faq-section {
+  margin: 1rem 0;
+}
+.faq-container .faq-question {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: rgb(228, 228, 228);
+  font-size: 24px;
+}
+.faq-container .faq-answer {
+  color: rgb(165, 165, 165);
+}
+.faq-container .toggle-icon {
+  margin-right: 8px; /* Space between icon and text */
+  transition: transform 0.3s ease; /* Smooth transition for rotation */
+}
+
 html,
 body,
 * {
