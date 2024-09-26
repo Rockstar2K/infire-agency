@@ -1,0 +1,11 @@
+// _variables.scss
+
+$colors: (
+  infire-white: #F4F4ED,
+  infire-black: #181818,
+);
+
+// Function to get color
+@function get-color($key) {
+  @return map-get($colors, $key);
+}

@@ -1,11 +1,17 @@
 @use 'footer';
 @use 'faq';
+@use 'variables';
+@use './home/solutions';
 
 html,
 body,
 * {
   margin: 0;
   padding: 0;
+}
+
+main{
+  background-color: variables.get-color(infire-black);
 }
 
 h1,
@@ -15,11 +21,13 @@ h4,
 h5,
 h6 {
   font-family: Unbounded, sans-serif;
-  color: whitesmoke !important; /* bootstrap está cambiando los colores*/
+  color:  variables.get-color(infire-white) !important; /* bootstrap está cambiando los colores*/
 }
 
 p,
 button {
   font-family: Helvetica, sans-serif;
-  color: whitesmoke;
+  color:  variables.get-color(infire-white);
 }
+
+

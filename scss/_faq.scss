@@ -1,14 +1,19 @@
-
+@use 'variables';
 
 .faq-container{
-    background-color: black;
+    background-color: variables.get-color(infire-white);
     display: flex;
     flex-direction: row;
     padding: 5%;
+    border-radius: 24px;
 
     .faq-container_right{
         flex: 1;
         padding-right: 2rem;
+        
+        h3, p{
+            color: variables.get-color(infire-black) !important;
+        }
     }
     .faq-container_left{
         flex: 1;
@@ -25,12 +30,12 @@
         cursor: pointer;
         display: flex;
         align-items: center;
-        color: rgb(228, 228, 228);
-        font-size: 24px;
+        color:  variables.get-color(infire-black);
+        font-size: 20px;
     }
 
     .faq-answer{
-        color: rgb(165, 165, 165);
+        color: rgb(73, 73, 73);
     }
 
     .toggle-icon {

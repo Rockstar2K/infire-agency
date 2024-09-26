@@ -5,7 +5,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  background-color: #030303;
+  background-color: #181818;
   flex-direction: column;
 }
 footer .footer-columns-container {
@@ -28,16 +28,16 @@ footer .footer-columns-container .footer-left .title-icon img {
 }
 footer .footer-columns-container .footer-left button {
   border-radius: 0.5rem;
-  color: rgb(255, 255, 255);
-  border: solid 1px white;
+  color: #F4F4ED;
+  border: solid 1px #F4F4ED;
   padding: 0.25rem 2rem;
-  background-color: black;
+  background-color: #181818;
   transition: color 0.3s ease, background-color 0.3s ease;
   margin-top: 1rem;
 }
 footer .footer-columns-container .footer-left button:hover {
-  background-color: white;
-  color: black;
+  background-color: #F4F4ED;
+  color: #181818;
 }
 footer .footer-columns-container .footer-right {
   flex: 1;
@@ -55,16 +55,16 @@ footer .footer-columns-container .footer-right .title-icon img {
 }
 footer .footer-columns-container .footer-right button {
   border-radius: 0.5rem;
-  color: rgb(255, 255, 255);
-  border: solid 1px white;
+  color: #F4F4ED;
+  border: solid 1px #F4F4ED;
   padding: 0.25rem 2rem;
-  background-color: black;
+  background-color: #181818;
   transition: color 0.3s ease, background-color 0.3s ease;
   margin-top: 1rem;
 }
 footer .footer-columns-container .footer-right button:hover {
-  background-color: white;
-  color: black;
+  background-color: #F4F4ED;
+  color: #181818;
 }
 footer .footer-bottom {
   width: 100%;
@@ -76,14 +76,18 @@ footer .footer-bottom p {
 }
 
 .faq-container {
-  background-color: black;
+  background-color: #F4F4ED;
   display: flex;
   flex-direction: row;
   padding: 5%;
+  border-radius: 24px;
 }
 .faq-container .faq-container_right {
   flex: 1;
   padding-right: 2rem;
+}
+.faq-container .faq-container_right h3, .faq-container .faq-container_right p {
+  color: #181818 !important;
 }
 .faq-container .faq-container_left {
   flex: 1;
@@ -96,15 +100,73 @@ footer .footer-bottom p {
   cursor: pointer;
   display: flex;
   align-items: center;
-  color: rgb(228, 228, 228);
-  font-size: 24px;
+  color: #181818;
+  font-size: 20px;
 }
 .faq-container .faq-answer {
-  color: rgb(165, 165, 165);
+  color: rgb(73, 73, 73);
 }
 .faq-container .toggle-icon {
   margin-right: 8px; /* Space between icon and text */
   transition: transform 0.3s ease; /* Smooth transition for rotation */
+}
+
+.solutions-container {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+.solutions-container .solutions-container-title {
+  text-align: center;
+}
+.solutions-container .solution-container {
+  min-height: 12rem;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.solutions-container .solution-container .solution-container-left {
+  flex-basis: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+.solutions-container .solution-container .solution-container-right {
+  flex-basis: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.solutions-container .solution-container .solution-container-right img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 400px;
+}
+@media (min-width: 1024px) {
+  .solutions-container .solution-container {
+    flex-direction: row;
+  }
+}
+
+.solution-btn {
+  border: 0;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 14px;
+  background-color: #b1b1b1;
+}
+
+.solution-btn:hover {
+  background-color: #cccccc;
 }
 
 html,
@@ -114,6 +176,10 @@ body,
   padding: 0;
 }
 
+main {
+  background-color: #181818;
+}
+
 h1,
 h2,
 h3,
@@ -121,13 +187,13 @@ h4,
 h5,
 h6 {
   font-family: Unbounded, sans-serif;
-  color: whitesmoke !important; /* bootstrap está cambiando los colores*/
+  color: #F4F4ED !important; /* bootstrap está cambiando los colores*/
 }
 
 p,
 button {
   font-family: Helvetica, sans-serif;
-  color: whitesmoke;
+  color: #F4F4ED;
 }
 
 /*# sourceMappingURL=styles.css.map */

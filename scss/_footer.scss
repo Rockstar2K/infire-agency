@@ -1,3 +1,4 @@
+@use 'variables';
 
 // Mixin for shared styles
 @mixin column-styles {
@@ -18,16 +19,16 @@
   
     button {
       border-radius: 0.5rem;
-      color: rgb(255, 255, 255);
-      border: solid 1px white;
+      color: variables.get-color(infire-white);
+      border: solid 1px variables.get-color(infire-white);
       padding: 0.25rem 2rem;
-      background-color: black;
+      background-color: variables.get-color(infire-black);
       transition: color 0.3s ease, background-color 0.3s ease;
       margin-top: 1rem;
   
       &:hover {
-        background-color: white;
-        color: black;
+        background-color: variables.get-color(infire-white);
+        color: variables.get-color(infire-black);
       }
     }
   }
@@ -38,7 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background-color: #030303;
+    background-color: variables.get-color(infire-black);
     flex-direction: column;
   
     .footer-columns-container {
