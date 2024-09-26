@@ -1,3 +1,5 @@
+@use '../variables';
+
 .solutions-grid-container{
     padding: 5%;
 
@@ -26,6 +28,26 @@
                 min-height: 5rem;
                 padding: 2rem;
                 border-radius: 1rem;
+                transition: all ease 0.5s;
+
+                &:hover{
+                    border: solid 1px variables.get-color(infire-white);
+                }
+
+                button {
+                    border-radius: 0.5rem;
+                    color: variables.get-color(infire-white);
+                    border: solid 1px variables.get-color(infire-white);
+                    padding: 0.25rem 2rem;
+                    background-color: variables.get-color(infire-black);
+                    transition: color 0.3s ease, background-color 0.3s ease;
+                    margin-top: 1rem;
+                
+                    &:hover {
+                      background-color: variables.get-color(infire-white);
+                      color: variables.get-color(infire-black);
+                    }
+                }
                 
                 .title-icon{
                     display: flex;
@@ -67,6 +89,26 @@
                 min-height: 5rem;
                 padding: 2rem;
                 border-radius: 1rem;
+                transition: all ease 0.5s;
+
+                &:hover{
+                    border: solid 1px variables.get-color(infire-white);
+                }
+
+                button {
+                    border-radius: 0.5rem;
+                    color: variables.get-color(infire-white);
+                    border: solid 1px variables.get-color(infire-white);
+                    padding: 0.25rem 2rem;
+                    background-color: variables.get-color(infire-black);
+                    transition: color 0.3s ease, background-color 0.3s ease;
+                    margin-top: 1rem;
+                
+                    &:hover {
+                      background-color: variables.get-color(infire-white);
+                      color: variables.get-color(infire-black);
+                    }
+                }
                 
                 .title-icon{
                     display: flex;

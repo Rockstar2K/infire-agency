@@ -253,6 +253,23 @@ footer .footer-bottom p {
   min-height: 5rem;
   padding: 2rem;
   border-radius: 1rem;
+  transition: all ease 0.5s;
+}
+.solutions-grid-container .solutions-grid .solutions-grid_top .grid-solution:hover {
+  border: solid 1px #F4F4ED;
+}
+.solutions-grid-container .solutions-grid .solutions-grid_top .grid-solution button {
+  border-radius: 0.5rem;
+  color: #F4F4ED;
+  border: solid 1px #F4F4ED;
+  padding: 0.25rem 2rem;
+  background-color: #181818;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  margin-top: 1rem;
+}
+.solutions-grid-container .solutions-grid .solutions-grid_top .grid-solution button:hover {
+  background-color: #F4F4ED;
+  color: #181818;
 }
 .solutions-grid-container .solutions-grid .solutions-grid_top .grid-solution .title-icon {
   display: flex;
@@ -285,6 +302,23 @@ footer .footer-bottom p {
   min-height: 5rem;
   padding: 2rem;
   border-radius: 1rem;
+  transition: all ease 0.5s;
+}
+.solutions-grid-container .solutions-grid .solutions-bottom .grid-solution:hover {
+  border: solid 1px #F4F4ED;
+}
+.solutions-grid-container .solutions-grid .solutions-bottom .grid-solution button {
+  border-radius: 0.5rem;
+  color: #F4F4ED;
+  border: solid 1px #F4F4ED;
+  padding: 0.25rem 2rem;
+  background-color: #181818;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  margin-top: 1rem;
+}
+.solutions-grid-container .solutions-grid .solutions-bottom .grid-solution button:hover {
+  background-color: #F4F4ED;
+  color: #181818;
 }
 .solutions-grid-container .solutions-grid .solutions-bottom .grid-solution .title-icon {
   display: flex;
@@ -314,6 +348,7 @@ body,
 * {
   margin: 0;
   padding: 0;
+  transition: all ease 0.5s;
 }
 
 main {
