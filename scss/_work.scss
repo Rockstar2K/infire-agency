@@ -1,0 +1,71 @@
+.work-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+
+    .work-title{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        p{
+            width: 70%;
+        }
+    }
+
+
+    .work-grid{
+        display: grid;
+        grid-template-columns: 1fr; /* Create 2 columns of equal width */
+        max-width: 100%;
+        gap: 2rem;
+        padding: 2rem 0;
+
+        .work {
+            max-height: 50vh;
+            position: relative; /* This is necessary for the aspect-ratio container */
+            overflow: hidden; /* Ensures the image won't overflow */
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            gap: 0.5rem;
+            padding: 2rem;
+            border-radius: 1rem;
+
+            &:hover{
+                scale: 0.95;
+                border: solid 1px white;
+
+            }
+
+            h3{
+                text-align: start;
+                margin-top: 1rem;
+            }
+          
+        
+            img {
+                max-height: 70%;
+                object-fit: cover; /* Ensures the image covers the entire container while maintaining aspect ratio */
+                max-width: 100%;
+                border-radius: 1rem;
+                border: solid 1px transparent;
+
+                
+
+            }
+
+            p{
+                color: grey;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr); /* Create 2 columns of equal width */
+
+        }
+    }
+
+}
+
+

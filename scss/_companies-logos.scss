@@ -1,0 +1,23 @@
+
+
+.companies-logos-container{
+    padding: 5%;
+    display: flex;
+
+    .companies-logos_left{
+        flex: 1;
+        margin-right: 2rem;
+        padding: 1rem;
+    }
+    .companies-logos_right{
+        flex: 4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        div{
+            width: auto;
+        }
+    }
+}

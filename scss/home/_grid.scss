@@ -9,6 +9,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    p{
+        width: 70%;
+    }
   }
 
   .solutions-grid {
@@ -23,6 +26,8 @@
       padding: 2rem;
       border-radius: 1rem;
       transition: all ease 0.5s;
+      border: solid 1px transparent;
+
 
       &:hover {
         border: solid 1px variables.get-color(infire-white);
