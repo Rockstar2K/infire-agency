@@ -146,21 +146,8 @@ p{
     font-size: 16px;
 }
 
-/* FOOTER */
 
-footer{
-    height: 150px;
-    padding: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    background-color: #030303;
-    flex-direction: column;
-}
 
-footer p{
-    font-size: 12px;
-}
 
 /* SOLUTIONS */
 .solutions-container{

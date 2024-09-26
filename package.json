@@ -2,7 +2,7 @@
   "name": "infire-agency",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "modules",
+  "type": "module",
   "scripts": {
     "build-css": "sass scss/styles.scss:css/styles.css",
     "watch-css": "sass --watch scss/styles.scss:css/styles.css"
