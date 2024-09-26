@@ -1,28 +1,12 @@
 @charset "UTF-8";
-html, body, * {
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: Unbounded, sans-serif;
-  color: whitesmoke !important; /* bootstrap está cambiando los colores*/
-}
-
-p, button {
-  font-family: Helvetica, sans-serif;
-  color: whitesmoke;
-}
-
 footer {
-  height: 150px;
+  height: auto;
   padding: 5%;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   background-color: #030303;
   flex-direction: column;
-  height: auto;
 }
 footer .footer-columns-container {
   display: flex;
@@ -89,6 +73,29 @@ footer .footer-bottom {
 footer .footer-bottom p {
   font-size: 12px;
   color: rgb(156, 156, 156);
+}
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Unbounded, sans-serif;
+  color: whitesmoke !important; /* bootstrap está cambiando los colores*/
+}
+
+p,
+button {
+  font-family: Helvetica, sans-serif;
+  color: whitesmoke;
 }
 
 /*# sourceMappingURL=styles.css.map */
