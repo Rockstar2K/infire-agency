@@ -239,26 +239,23 @@ footer .footer-bottom p {
   text-align: center;
 }
 .solutions-grid-container .solutions-grid {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  display: grid;
   padding: 2rem 0;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  /* Media Queries for responsiveness */
 }
-.solutions-grid-container .solutions-grid .solutions-grid_top {
-  display: flex;
-  flex-direction: column;
-}
-.solutions-grid-container .solutions-grid .solutions-grid_top .grid-solution {
+.solutions-grid-container .solutions-grid .grid-solution {
   flex: 1;
   min-height: 5rem;
   padding: 2rem;
   border-radius: 1rem;
   transition: all ease 0.5s;
 }
-.solutions-grid-container .solutions-grid .solutions-grid_top .grid-solution:hover {
+.solutions-grid-container .solutions-grid .grid-solution:hover {
   border: solid 1px #F4F4ED;
 }
-.solutions-grid-container .solutions-grid .solutions-grid_top .grid-solution button {
+.solutions-grid-container .solutions-grid .grid-solution button {
   border-radius: 0.5rem;
   color: #F4F4ED;
   border: solid 1px #F4F4ED;
@@ -267,79 +264,35 @@ footer .footer-bottom p {
   transition: color 0.3s ease, background-color 0.3s ease;
   margin-top: 1rem;
 }
-.solutions-grid-container .solutions-grid .solutions-grid_top .grid-solution button:hover {
+.solutions-grid-container .solutions-grid .grid-solution button:hover {
   background-color: #F4F4ED;
   color: #181818;
 }
-.solutions-grid-container .solutions-grid .solutions-grid_top .grid-solution .title-icon {
+.solutions-grid-container .solutions-grid .grid-solution .title-icon {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.solutions-grid-container .solutions-grid .solutions-grid_top .grid-solution .title-icon h3 {
+.solutions-grid-container .solutions-grid .grid-solution .title-icon h3 {
   font-size: 20px;
   font-weight: lighter;
   margin: 0;
 }
-.solutions-grid-container .solutions-grid .solutions-grid_top .grid-solution .title-icon img {
+.solutions-grid-container .solutions-grid .grid-solution .title-icon img {
   height: 2.5rem;
   margin-right: 0.5rem;
 }
-.solutions-grid-container .solutions-grid .solutions-grid_top .grid-solution p {
+.solutions-grid-container .solutions-grid .grid-solution p {
   margin-top: 1rem;
 }
-@media (min-width: 1024px) {
-  .solutions-grid-container .solutions-grid .solutions-grid_top {
-    flex-direction: row;
+@media (min-width: 768px) {
+  .solutions-grid-container .solutions-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
   }
 }
-.solutions-grid-container .solutions-grid .solutions-bottom {
-  display: flex;
-  flex-direction: column;
-}
-.solutions-grid-container .solutions-grid .solutions-bottom .grid-solution {
-  flex: 1;
-  min-height: 5rem;
-  padding: 2rem;
-  border-radius: 1rem;
-  transition: all ease 0.5s;
-}
-.solutions-grid-container .solutions-grid .solutions-bottom .grid-solution:hover {
-  border: solid 1px #F4F4ED;
-}
-.solutions-grid-container .solutions-grid .solutions-bottom .grid-solution button {
-  border-radius: 0.5rem;
-  color: #F4F4ED;
-  border: solid 1px #F4F4ED;
-  padding: 0.25rem 2rem;
-  background-color: #181818;
-  transition: color 0.3s ease, background-color 0.3s ease;
-  margin-top: 1rem;
-}
-.solutions-grid-container .solutions-grid .solutions-bottom .grid-solution button:hover {
-  background-color: #F4F4ED;
-  color: #181818;
-}
-.solutions-grid-container .solutions-grid .solutions-bottom .grid-solution .title-icon {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-.solutions-grid-container .solutions-grid .solutions-bottom .grid-solution .title-icon h3 {
-  font-size: 20px;
-  font-weight: lighter;
-  margin: 0;
-}
-.solutions-grid-container .solutions-grid .solutions-bottom .grid-solution .title-icon img {
-  height: 2.5rem;
-  margin-right: 0.5rem;
-}
-.solutions-grid-container .solutions-grid .solutions-bottom .grid-solution p {
-  margin-top: 1rem;
-}
 @media (min-width: 1024px) {
-  .solutions-grid-container .solutions-grid .solutions-bottom {
-    flex-direction: row;
+  .solutions-grid-container .solutions-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on large screens */
   }
 }
 
@@ -349,6 +302,7 @@ body,
   margin: 0;
   padding: 0;
   transition: all ease 0.5s;
+  box-sizing: border-box;
 }
 
 main {
