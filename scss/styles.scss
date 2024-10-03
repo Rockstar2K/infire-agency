@@ -7,6 +7,9 @@
 @use 'companies-logos';
 @use 'work';
 
+@import url('https://fonts.googleapis.com/css?family=Unbounded:400,900');
+
+
 
 
 
@@ -22,7 +25,7 @@ body,
 }
 
 body{
-  color: whitesmoke;
+  color: variables.get-color(infire-white);
   background-color: variables.get-color(infire-black);
 
   font-family: 'Unbounded', sans-serif;
@@ -44,6 +47,10 @@ h6 {
   color:  variables.get-color(infire-white) !important; /* bootstrap está cambiando los colores*/
 }
 
+h2{
+  font-size: 2rem;
+}
+
 p,
 button {
   font-family: Helvetica, sans-serif;
@@ -54,7 +61,7 @@ button {
   padding: 0.5rem 2rem !important;
   background-color: black !important;
   color: variables.get-color(infire-white) !important;
-
+  border-bottom: 2px solid rgb(100, 100, 100);
   a, span{
     color: variables.get-color(infire-white) !important;
   }
@@ -67,6 +74,11 @@ button {
 
   .navbar-toggler{
     background-color: variables.get-color(infire-white) !important;
+
+    &:hover{
+      background-color: rgb(214, 214, 214) !important;
+
+    }
   }
 }
 
