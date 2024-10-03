@@ -70,6 +70,12 @@ button {
     img{
       height: 2rem;
     }
+
+    &:hover{
+      scale: 0.95;
+
+    }
+   
   }
 
   .navbar-toggler{
@@ -77,7 +83,7 @@ button {
 
     &:hover{
       background-color: rgb(214, 214, 214) !important;
-
+      scale: 0.95;
     }
   }
 }

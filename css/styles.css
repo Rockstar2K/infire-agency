@@ -429,11 +429,15 @@ button {
 .navbar .navbar-brand img {
   height: 2rem;
 }
+.navbar .navbar-brand:hover {
+  scale: 0.95;
+}
 .navbar .navbar-toggler {
   background-color: #F4F4ED !important;
 }
 .navbar .navbar-toggler:hover {
   background-color: rgb(214, 214, 214) !important;
+  scale: 0.95;
 }
 
 /*# sourceMappingURL=styles.css.map */
