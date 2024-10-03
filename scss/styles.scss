@@ -21,9 +21,18 @@ body,
 
 }
 
+body{
+  color: whitesmoke;
+  background-color: variables.get-color(infire-black);
+
+  font-family: 'Unbounded', sans-serif;
+}
+
 main{
   background-color: variables.get-color(infire-black);
 }
+
+
 
 h1,
 h2,
@@ -41,4 +50,23 @@ button {
   color:  variables.get-color(infire-white);
 }
 
+.navbar{
+  padding: 0.5rem 2rem !important;
+  background-color: black !important;
+  color: variables.get-color(infire-white) !important;
+
+  a, span{
+    color: variables.get-color(infire-white) !important;
+  }
+
+  .navbar-brand{
+    img{
+      height: 2rem;
+    }
+  }
+
+  .navbar-toggler{
+    background-color: variables.get-color(infire-white) !important;
+  }
+}
 
