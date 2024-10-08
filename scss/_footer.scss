@@ -39,7 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background-color: variables.get-color(infire-black);
+    background-color: black;
     flex-direction: column;
   
     .footer-columns-container {
@@ -58,6 +58,8 @@
     .footer-bottom {
       width: 100%;
       margin-top: 4rem;
+
+
   
       p {
         font-size: 12px;
