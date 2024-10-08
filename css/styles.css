@@ -390,10 +390,11 @@ header h1 {
   display: flex;
   align-items: center;
   padding: 5%;
+  flex-direction: column;
 }
 .contact-container .contact-left {
   flex: 1;
-  padding: 2rem;
+  width: 100%;
 }
 .contact-container .contact-left .map-container {
   position: relative;
@@ -401,6 +402,7 @@ header h1 {
   padding-bottom: 56.25%; /* Aspect ratio 16:9 */
   height: 0; /* Height based on padding */
   overflow: hidden; /* Hide overflow */
+  min-height: 300px; /* Set a minimum height for the map */
 }
 .contact-container .contact-left .map-container iframe {
   position: absolute;
@@ -409,15 +411,19 @@ header h1 {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   border: 0; /* No border */
+  border-radius: 1rem;
 }
 .contact-container .contact-right {
   flex: 1;
+  width: 100%;
+  min-height: 300px;
+  align-content: center;
 }
 .contact-container .contact-right button {
   border: 1px solid #F4F4ED;
   border-radius: 8px;
   background-color: #181818;
-  padding: 0.5rem 2rem;
+  padding: 0.3rem 2rem;
   margin-right: 1rem;
 }
 .contact-container .contact-right button:hover {
@@ -426,6 +432,14 @@ header h1 {
   scale: 0.95;
 }
 
+@media (min-width: 1024px) {
+  .contact-container {
+    flex-direction: row;
+  }
+  .contact-container .contact-left {
+    padding: 2rem;
+  }
+}
 html,
 body,
 * {
