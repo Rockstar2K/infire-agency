@@ -321,10 +321,16 @@ footer .footer-bottom p {
   width: auto;
 }
 
+header h1 {
+  text-align: center;
+  margin: 0;
+  padding-top: 2rem;
+}
+
 .work-container {
   display: flex;
   flex-direction: column;
-  padding: 5%;
+  padding: 1rem 5% 5% 5%;
 }
 .work-container .work-title {
   display: flex;
@@ -419,6 +425,10 @@ button {
 
 footer img#logo {
   width: 6rem;
+}
+
+header {
+  background-color: #181818;
 }
 
 .navbar {

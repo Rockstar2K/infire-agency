@@ -61,6 +61,11 @@ footer img#logo{
   width: 6rem;
 }
 
+header{
+  background-color: variables.get-color(infire-black);
+
+}
+
 .navbar{
   padding: 0.5rem 2rem !important;
   background-color: black !important;
