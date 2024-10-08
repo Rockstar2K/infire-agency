@@ -12,6 +12,7 @@ footer {
 footer .footer-columns-container {
   display: flex;
   width: 100%;
+  flex-direction: column;
 }
 footer .footer-columns-container .footer-left {
   flex: 1;
@@ -76,10 +77,15 @@ footer .footer-bottom p {
   color: rgb(156, 156, 156);
 }
 
+@media (min-width: 1024px) {
+  footer .footer-columns-container {
+    flex-direction: row;
+  }
+}
 .faq-container {
   background-color: #F4F4ED;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 5%;
   border-radius: 24px;
 }
@@ -92,7 +98,6 @@ footer .footer-bottom p {
 }
 .faq-container .faq-container_left {
   flex: 1;
-  padding-left: 2rem;
 }
 .faq-container .faq-container_left .faq-section {
   margin: 1rem 0;
@@ -112,6 +117,14 @@ footer .footer-bottom p {
   transition: transform 0.3s ease; /* Smooth transition for rotation */
 }
 
+@media (min-width: 1024px) {
+  .faq-container {
+    flex-direction: row;
+  }
+  .faq-container .faq-container_left {
+    padding-left: 2rem;
+  }
+}
 #hero-home {
   background-image: url("../assets/background.jpg");
 }

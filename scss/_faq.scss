@@ -3,7 +3,7 @@
 .faq-container{
     background-color: variables.get-color(infire-white);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 5%;
     border-radius: 24px;
 
@@ -17,7 +17,6 @@
     }
     .faq-container_left{
         flex: 1;
-        padding-left: 2rem;
         
         .faq-section{
             margin: 1rem 0;
@@ -42,7 +41,20 @@
         margin-right: 8px; /* Space between icon and text */
         transition: transform 0.3s ease; /* Smooth transition for rotation */
     }
+}
 
+@media (min-width: 1024px) {
+
+    .faq-container{
+        flex-direction: row;
+        .faq-container_left{
+            padding-left: 2rem;
+
+            
+
+        }
+
+    }
 
     
 }

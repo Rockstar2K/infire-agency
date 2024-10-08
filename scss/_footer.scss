@@ -45,6 +45,7 @@
     .footer-columns-container {
       display: flex;
       width: 100%;
+      flex-direction: column;
   
       .footer-left {
         @include column-styles; // Include shared styles
@@ -67,4 +68,14 @@
       }
     }
   }
+
+  @media (min-width: 1024px) {
+
+    footer{
+      .footer-columns-container{
+        flex-direction: row;
+      }
+    }
+    
+}
   
