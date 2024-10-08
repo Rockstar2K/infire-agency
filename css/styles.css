@@ -452,6 +452,9 @@ header h1 {
   .contact-container .contact-left {
     padding: 2rem;
   }
+  .contact-container .contact-right {
+    padding: 2rem;
+  }
 }
 html,
 body,
