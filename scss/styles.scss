@@ -26,7 +26,7 @@ body,
 
 body{
   color: variables.get-color(infire-white);
-  background-color: variables.get-color(infire-black);
+  background-color: variables.get-color(infire-black) !important;
 
   font-family: 'Unbounded', sans-serif;
 }

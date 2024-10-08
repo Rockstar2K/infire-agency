@@ -396,7 +396,7 @@ body,
 
 body {
   color: #F4F4ED;
-  background-color: #181818;
+  background-color: #181818 !important;
   font-family: "Unbounded", sans-serif;
 }
 
