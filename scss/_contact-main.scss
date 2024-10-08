@@ -1,0 +1,48 @@
+@use 'variables';
+
+.contact-container{
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 5%;
+
+    .contact-left{
+        flex: 1;
+        padding: 2rem;
+
+        .map-container {
+            position: relative;
+            width: 100%; /* Full width */
+            padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+            height: 0; /* Height based on padding */
+            overflow: hidden; /* Hide overflow */
+        
+            iframe {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%; /* Full width */
+              height: 100%; /* Full height */
+              border: 0; /* No border */
+            }
+        }
+    }
+    .contact-right{
+        flex: 1;
+
+        button{
+            border: 1px solid variables.get-color(infire-white) ;
+            border-radius: 8px;
+            background-color: variables.get-color(infire-black);
+            padding: 0.5rem 2rem;
+            margin-right: 1rem;
+
+            &:hover{
+                background-color: variables.get-color(infire-white);
+                color: variables.get-color(infire-black);
+                scale: 0.95;
+            }
+        }
+    }
+}
+

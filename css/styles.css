@@ -385,6 +385,47 @@ header h1 {
   }
 }
 
+.contact-container {
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 5%;
+}
+.contact-container .contact-left {
+  flex: 1;
+  padding: 2rem;
+}
+.contact-container .contact-left .map-container {
+  position: relative;
+  width: 100%; /* Full width */
+  padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+  height: 0; /* Height based on padding */
+  overflow: hidden; /* Hide overflow */
+}
+.contact-container .contact-left .map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  border: 0; /* No border */
+}
+.contact-container .contact-right {
+  flex: 1;
+}
+.contact-container .contact-right button {
+  border: 1px solid #F4F4ED;
+  border-radius: 8px;
+  background-color: #181818;
+  padding: 0.5rem 2rem;
+  margin-right: 1rem;
+}
+.contact-container .contact-right button:hover {
+  background-color: #F4F4ED;
+  color: #181818;
+  scale: 0.95;
+}
+
 html,
 body,
 * {
