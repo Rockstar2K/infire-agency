@@ -417,6 +417,10 @@ button {
   color: #F4F4ED;
 }
 
+footer img#logo {
+  width: 6rem;
+}
+
 .navbar {
   padding: 0.5rem 2rem !important;
   background-color: black !important;
